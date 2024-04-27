@@ -12,13 +12,13 @@ This project is to show case my skills with Python where I:
 
 ## Choosing Job Board and Job Titles
 
-- You can see all steps laid out in this [Jupyter Notebook]('https://github.com/christianhansonn/PortfolioWebScrape/blob/main/web_scrape.ipynb')
+- You can see all steps laid out in this [Jupyter Notebook](https://github.com/christianhansonn/PortfolioWebScrape/blob/main/web_scrape.ipynb)
 
 ## Scraping Job Board
 
-- I wrote this [Python script]('https://github.com/christianhansonn/PortfolioWebScrape/blob/main/job_scraper.py') to call as a function to scrape the desired job board for chosen job titles
+- I wrote this [Python script](https://github.com/christianhansonn/PortfolioWebScrape/blob/main/job_scraper.py) to call as a function to scrape the desired job board for chosen job titles
 - Results were then returned and stored in a Pandas DataFrame
 
 ## Application Automation
 
-- I wrote this [Python script]('https://github.com/christianhansonn/PortfolioWebScrape/blob/main/apply_function.py') to call as a function to automate the application process, passing the job links as a variable
+- I wrote this [Python script](https://github.com/christianhansonn/PortfolioWebScrape/blob/main/apply_function.py) to call as a function to automate the application process, passing the job links as a variable

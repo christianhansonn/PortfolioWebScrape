@@ -1,7 +1,32 @@
-import asyncio
+from helpers.applicant_class import Applicant
 from playwright.async_api import async_playwright
 
-async def apply_to_job(link, applicant):
+async def apply_to_job(link: str, applicant: Applicant) -> None:
+    """
+    Automates the process of applying to a job using the given link and applicant details.
+
+    This asynchronous function uses the Playwright library to automate the process of filling out
+    a job application form on a webpage. The function navigates to the job application page,
+    fills out the form fields with the provided applicant's details, and submits the application.
+
+    Args:
+        link (str): The URL of the job application page.
+        applicant (Applicant): An object containing the applicant's details. The object should have the
+                            following attributes: name (str), email (str), phone (str).
+
+    Returns:
+        None
+
+    Example:
+        class Applicant:
+            def __init__(self, name, email, phone):
+                self.name = name
+                self.email = email
+                self.phone = phone
+
+        applicant = Applicant(name="John Doe", email="john.doe@example.com", phone="1234567890")
+        await apply_to_job("https://example.com/apply", applicant)
+    """
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=False)
         context = await browser.new_context()
